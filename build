@@ -1,0 +1,4 @@
+make -j $(nproc) TARGET=linux-glibc USE_OPENSSL=1 SSL_LIB=/usr/local/openssl-1.1.1c/lib SSL_INC=/usr/local/openssl-1.1.1c/include USE_ZLIB=1 USE_LUA=1 LUA_LIB=/usr/local/lib/ LUA_INC=/usr/local/include/ USE_PCRE=1 USE_SYSTEMD=1 EXTRA_OBJS="contrib/prometheus-exporter/service-prometheus.o"
+make install
+cp /usr/local/sbin/haproxy /usr/sbin/haproxy
+useradd -M -r -s /sbin/nologin haproxy
