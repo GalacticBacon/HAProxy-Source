@@ -1,3 +1,4 @@
+#!/bin/bash
 ./yum_deps
 ./download
 ./build_lua
