@@ -1,4 +1,5 @@
 tar xvzf keepalived-2.0.20.tar.gz
+cd keepalived-2.0.20
 ./configure --prefix=/usr/local/keepalived-2.0.20
 make
 sudo make install
