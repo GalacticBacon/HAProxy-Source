@@ -5,6 +5,7 @@ grep -qxF 'net.ipv4.ip_nonlocal_bind=1' /etc/sysctl.conf || echo net.ipv4.ip_non
 sysctl -p
 firewall-cmd --zone=public --add-port=8404/tcp --permanent
 firewall-cmd --zone=public --add-service=https --permanent
+firewall-cmd --zone=public --add-service=http --permanent
 firewall-cmd --reload
 systemctl enable haproxy
 systemctl start haproxy
