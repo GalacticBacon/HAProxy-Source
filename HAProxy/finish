@@ -1,5 +1,7 @@
 systemctl daemon-reload
 mkdir -p /etc/haproxy
 cp haproxy.cfg /etc/haproxy/haproxy.cfg
+grep -qxF 'net.ipv4.ip_nonlocal_bind=1' /etc/sysctl.conf || echo net.ipv4.ip_nonlocal_bind=1 >> /etc/sysctl.conf
+sysctl -p
 systemctl enable haproxy
 systemctl start haproxy

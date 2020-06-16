@@ -4,3 +4,4 @@ cd openssl-1.1.1c
 make
 make install
 cd ..
+grep -qxF '/usr/local/openssl-1.1.1c/lib' /etc/ld.so.conf || echo /usr/local/openssl-1.1.1c/lib >> /etc/ld.so.conf
