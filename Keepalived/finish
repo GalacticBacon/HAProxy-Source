@@ -1,5 +1,7 @@
 ln -s /etc/rc.d/init.d/keepalived.init /etc/rc.d/rc3.d/S99keepalived
 mkdir /etc/keepalived
 cp keepalived.conf /etc/keepalived/keepalived.conf
+firewall-cmd --add-rich-rule='rule protocol value="vrrp" accept' --permanent
+firewall-cmd --reload
 systemctl start keepalived
 systemctl enable keepalived
