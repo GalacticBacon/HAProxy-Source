@@ -1,0 +1,1 @@
+yum install -y libnl3-devel ipset-devel iptables-devel net-snmp-devel glib2-devel json-c-devel pcre2-devel libnftnl-devel libmnl-devel
