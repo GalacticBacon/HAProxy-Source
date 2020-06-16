@@ -1,0 +1,6 @@
+./yum_deps
+./download
+./build_lua
+./build_openssl
+./build_haproxy
+./finish

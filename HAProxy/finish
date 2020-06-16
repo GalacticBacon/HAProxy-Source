@@ -1,0 +1,5 @@
+systemctl daemon-reload
+mkdir -p /etc/haproxy
+cp haproxy.cfg /etc/haproxy/haproxy.cfg
+systemctl enable haproxy
+systemctl start haproxy

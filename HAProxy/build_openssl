@@ -1,0 +1,6 @@
+tar xvzf openssl-1.1.1c.tar.gz
+cd openssl-1.1.1c
+./config --prefix=/usr/local/openssl-1.1.1c shared
+make
+make install
+cd ..
