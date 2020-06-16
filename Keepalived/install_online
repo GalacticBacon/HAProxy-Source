@@ -1,0 +1,5 @@
+#!/bin/bash
+./yum_deps
+./download
+./build_keepalived
+./finish
